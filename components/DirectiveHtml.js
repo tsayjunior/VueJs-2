@@ -1,0 +1,13 @@
+var DirectiveHtml={
+    template: `<div>
+                <h1 v-text="title"></h1>
+                <p v-html="message"></p>
+            </div>`,
+    data(){
+        return {
+            title: 'Directiva v-html',
+            message: '<b>Hello desde directive html</b>',
+            
+        }
+    },
+}

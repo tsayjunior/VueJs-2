@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades computadas</title>
+</head>
+<body>
+    <div id="app">
+        
+        <computed-properties></computed-properties>
+        <computed-properties-get-set></computed-properties-get-set>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="components/computedComponents/ComputedProperties.js"></script>
+    <script src="components/computedComponents/ComputedPropertiesGetSet.js"></script>
+   
+    <script>
+        Vue.config.devtools = true;
+        var vm = new Vue({
+            el: '#app',
+            data(){
+                return {
+                    title: 'Computed Properties'
+                }
+            }
+        })
+    </script>
+</body>
+</html>

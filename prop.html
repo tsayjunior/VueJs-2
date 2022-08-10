@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Props</title>
+</head>
+<body>
+    <div id="app">
+        
+        <props-comp></props-comp>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="./components/movies/MovieComp.js"></script>
+    <script src="./components/PropsComp.js"></script>
+    <script>
+        Vue.config.devtools = true;
+        var vm = new Vue({
+            el: '#app',
+            data(){
+                return {
+                    title: 'Compartiendo data a componentes hijos [props]'
+                }
+            }
+        })
+    </script>
+</body>
+</html>
